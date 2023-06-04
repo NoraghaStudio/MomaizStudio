@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Cairo, sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 25px 0;
+    font-family: Cairo, sans-serif;
+}
+
+/* ... previous CSS rules ... */
+
+.logo {
+    display: block;
+    float: left;
+    /* Add this ruleto align the logo to the left */
+    padding: 0px 0;
+    /* Add this rule to add some spacing around the logo */
+}
+
+.logo img {
+    height: 50px;
+    /* Add this rule to set the height of the logo */
+    width: auto;
+    scale: 1.5;
+    /* Add this rule to maintain the aspect ratio of the logo */
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* Add this rule to vertically center the navigation menu */
+}
+
+/* ... previous CSS rules ... */
+
+/* ... previous CSS rules ... */
+
+nav ul {
+    list-style: none;
+    margin: 100;
+    padding: 0;
+    display: flex;
+    /* Add this rule to display the items horizontally */
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav li:first-child {
+    margin-left: 0;
+}
+
+nav li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    /* Add this rule to adjust the spacing between items */
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    /* Add this rule to create a smooth hover effect */
+}
+
+nav li a:hover {
+    background-color: #ccc;
+    /* Add this rule to change the background color when hovered */
+}
+
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section {
+    padding: 80px 0;
+}
+
+section h1,
+section h2 {
+    text-align: center;
+}
+
+section p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.center-align {
+    text-align: center;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+input[type="submit"]:hover {
+    background-color: #ccc;
+    color: #333;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 18px;
+}

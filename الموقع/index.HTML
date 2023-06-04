@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>استوديو مميز</title>
+    <link rel="icon" href="TitleLogo.jpg" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="#" class="logo"><img src="logo.png" alt="My Simple Website"></a>
+            <nav>
+                <ul>
+                    <li><a href="#contact"> <strong>تواصل معنا</strong></a></li>
+                    <li><a href="#about"><strong>من نحن</strong></a></li>
+                    <li><a href="#home"><strong>الرئيسية</strong></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="home">
+            <div class="container">
+                <h1>مرحبًا بكم في موقع استوديو مميز</h1>
+                <p class="center-align">
+                    لا شيء لأقوله هنا لأن الموقع والاستوديو واللعبة وكل شيء تحت الصيانة ونسبة إكمال المشروع هو 0.45%
+                    شكرًا لانتظاركم سنتين لكننا خيّبنا آمالكم، شكرًا لكم مرةً أخرى.ـ
+                </p>
+            </div>
+        </section>
+        <section id="about">
+            <div class="container">
+                <h2>من نحن</h2>
+                <p class="center-align">نحن استوديو حاولنا أن نطوّر لعبة لكن تركناها في منتصف المشوار لظروف غامضة وسنكمل
+                    في المستقبل القريب إن شاء الله.ـ</p>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="container">
+                <h2>تواصل معنا</h2>
+                <form>
+                    <label for="name" style="text-align: right;">:اسمك</label>
+                    <input type="text" id="name" name="name"><br>
+
+                    <label for="email" style="text-align: right;">:بريدك الإلكتروني</label>
+                    <input type="email" id="email" name="email"><br>
+
+                    <label for="message" style="text-align: right;">:رسالتك</label>
+                    <textarea id="message" name="message"></textarea><br>
+
+                    <input style="font-family: cairo;" type="submit" value="إرسال">
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; حقوق الطبع والنشر وكل شيء محفوظة 2021-2023</p>
+        </div>
+    </footer>
+</body>
+<script>
+    // Select allof the navigation links
+    const navLinks = document.querySelectorAll('nav ul li a');
+
+    // Add an event listener to each navigation link
+    navLinks.forEach(link => {
+        link.addEventListener('click', event => {
+            event.preventDefault(); // prevent the default link behavior
+
+            const sectionId = link.getAttribute('href'); // get the section id from the link href attribute
+            const section = document.querySelector(sectionId); // select the corresponding section
+
+            // scroll smoothly to the section using the scrollTo() method
+            window.scrollTo({
+                top: section.offsetTop,
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
+
+</html>
